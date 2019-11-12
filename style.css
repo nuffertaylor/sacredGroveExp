@@ -17,6 +17,7 @@
 }
 span:hover{
   opacity:.75;
+  cursor: pointer;
 }
 
 .backgroundModule {
