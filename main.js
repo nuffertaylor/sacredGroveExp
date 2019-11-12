@@ -96,7 +96,25 @@ app.controller("visionCtrl", function($scope) {
                             "And I saw many angels in this vision. ",
                             "I was about fourteen years old when I received this first communication."];
 
-    $scope.whichSelected = "account1835";
+    $scope.dataObject;
+    $scope.dataObject.scripture = ["I was about fourteen years old when I received this first communication.",
+                            "The boy Samuel ministered before the Lord under Eli. In those days the word of the Lord was rare; there were not many visions."]
+    $scope.dataObject.scripLink = ["1835 Account",
+                            "1 Samuel 3:1 NIV"]
+                            $scope.dataObject2;
+    $scope.dataObject2.scripture = ["Our responsibility is to always be in the right condition to receive the promptings or whisperings, the revelation, the inspiration of the Spirit. But He makes the decision of how and when."];
+    $scope.dataObject2.scripLink = ["D. Todd Christofferson"];
+    $scope.crossRef1832 = [];
+    $scope.crossRef1832.push($scope.dataObject);
+    $scope.crossRef1832.push($scope.dataObject2);
+
+    $scope.info = function(x)
+    {
+        //correctly passes in index
+        console.log(crossRef1832[x]);
+    };
+
+    
 });
 
 //61 lines in the 1832 accout

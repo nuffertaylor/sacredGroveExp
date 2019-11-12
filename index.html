@@ -3,28 +3,36 @@
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="sprout.png">
 </head>
 
 <body>
+
+<div class="backgroundModule">
+<div class="onBackground">
+
+
+        
     <h1>The Sacred Grove</h1>
     <button>1832</button>
     <button>1835</button>
-    <div class="backgroundModule">
-        <div class="onBackground">
-            <div ng-app="visionText" ng-controller="visionCtrl">
-                <div class="container">
-                    <div class="center">
-                        <span ng-repeat="x in account1832">
-                            {{x}}
-                        </span>
-                    </div>
-                </div>
+    <div ng-app="visionText" ng-controller="visionCtrl">
+        <div class="container">
+            <div class="center">
+                <span ng-repeat="x in account1832" ng-click="info($index)">
+                    {{x}}
+                </span>
             </div>
         </div>
     </div>
+
+
+
+</div>
+</div>
 </body>
 
 </html>
