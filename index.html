@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="sprout.png">
+    <link rel="icon" type="image/png" href="./imgs/sprout.png">
 </head>
 
 <body>
@@ -15,20 +15,18 @@
 <div class="onBackground">
 
 
-        
     <h1>The Sacred Grove</h1>
-    <button>1832</button>
-    <button>1835</button>
     <div ng-app="visionText" ng-controller="visionCtrl">
         <div class="container">
-            <div class="center">
+            <div class="center textBox">
                 <span ng-repeat="x in account1832" ng-click="info($index)">
                     {{x}}
                 </span>
             </div>
         </div>
+            <div id="textBox1" class="textBox">{{textBox1}}<small>{{author1}}</small></div>
+            <img src = {{pic1}}>
     </div>
-
 
 
 </div>
