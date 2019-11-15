@@ -106,10 +106,16 @@ app.controller("visionCtrl", function($scope) {
     var dataObject2 = new Object;
     dataObject2.scripture = ["Our responsibility is to always be in the right condition to receive the promptings or whisperings, the revelation, the inspiration of the Spirit. But He makes the decision of how and when."];
     dataObject2.scripLink = ["D. Todd Christofferson"];
-    dataObject2.picture = ["./imgs/youngjsbad.jpg"]
+    dataObject2.picture = ["./imgs/youngjsbad.jpg"];
+    var dataObject3 = new Object;
+    dataObject3.scripture = ["Honors bestowed upon me by men could not approach the inner peace provided by sealings performed in the house of the Lord."]
+    dataObject3.scripLink = ["Russell M. Nelson"];
+    dataObject3.picture = [""];
+    dataObject3.ref = ["https://www.churchofjesuschrist.org/study/general-conference/1992/04/doors-of-death?lang=eng"]
     var crossRef1832 = [];
     crossRef1832.push(dataObject);
     crossRef1832.push(dataObject2);
+    crossRef1832.push(dataObject3);
     $scope.lastSelected = 0;
 
     $scope.info = function(x)
@@ -117,7 +123,7 @@ app.controller("visionCtrl", function($scope) {
         //correctly passes in index
         document.getElementById("i-"+$scope.lastSelected).style.color = "white";
         $scope.lastSelected = x;
-        var whichScrip = (Math.round(Math.random() * crossRef1832[x].scripture.length));
+        var whichScrip = (Math.round(Math.random() * crossRef1832[x].scripture.length-1));
         $scope.textBox1 = crossRef1832[x].scripture[whichScrip];
         $scope.author1 =  crossRef1832[x].scripLink[whichScrip];
         $scope.pic1 = crossRef1832[x].picture[0];

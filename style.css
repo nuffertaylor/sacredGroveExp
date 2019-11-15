@@ -16,6 +16,12 @@
   left: 5vw;
   width: 300px;
 }
+#pic1 {
+  position: absolute;
+  width: 15%;
+  top: 5vw;
+  left: 5vw;
+}
 .center {
   width: 45%;
   height: 25vw;
