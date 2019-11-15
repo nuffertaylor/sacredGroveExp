@@ -110,15 +110,18 @@ app.controller("visionCtrl", function($scope) {
     var crossRef1832 = [];
     crossRef1832.push(dataObject);
     crossRef1832.push(dataObject2);
+    $scope.lastSelected = 0;
 
     $scope.info = function(x)
     {
         //correctly passes in index
+        document.getElementById("i-"+$scope.lastSelected).style.color = "white";
+        $scope.lastSelected = x;
         var whichScrip = (Math.round(Math.random() * crossRef1832[x].scripture.length));
         $scope.textBox1 = crossRef1832[x].scripture[whichScrip];
         $scope.author1 =  crossRef1832[x].scripLink[whichScrip];
         $scope.pic1 = crossRef1832[x].picture[0];
-        //document.getElementById(x).style.color = "yellow";
+        document.getElementById("i-"+x).style.color = "yellow";
     };
     
 

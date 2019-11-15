@@ -19,7 +19,7 @@
     <div ng-app="visionText" ng-controller="visionCtrl">
         <div class="container">
             <div class="center textBox">
-                <span ng-repeat="x in account1832" ng-click="info($index)">
+                <span ng-repeat="x in account1832" ng-click="info($index)" id="i-{{$index}}">
                     {{x}}
                 </span>
             </div>
