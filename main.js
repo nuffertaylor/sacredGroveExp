@@ -118,6 +118,7 @@ app.controller("visionCtrl", function($scope) {
         $scope.textBox1 = crossRef1832[x].scripture[whichScrip];
         $scope.author1 =  crossRef1832[x].scripLink[whichScrip];
         $scope.pic1 = crossRef1832[x].picture[0];
+        //document.getElementById(x).style.color = "yellow";
     };
     
 
