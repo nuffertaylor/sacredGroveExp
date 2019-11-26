@@ -3,16 +3,14 @@
 var app = angular.module("visionText", []);
 app.controller("visionCtrl", function($scope) {
     
-    $scope.account1832 = ["At about the age of twelve years,",
-                            " my mind become seriously impressed ",
-                            "with regard to the all-important concerns for the welfare of my immortal soul,",
-                            " which led me to searching the scriptures -believing,",
-                            " as I was taught, ",
-                            "that they contained the word of God and thus applying myself to them. ",
-                            "My intimate acquaintance with those of different denominations led me to marvel exceedingly, ",
-                            "for I discovered that they did not adorn their profession by a holy walk and godly conversation ",
-                            "agreeable to what I found contained in that sacred depository. This was a grief to my soul.",
-                            "Thus, from the age of twelve years to fifteen I pondered many things in my heart ",
+    $scope.account1832 = ["At about the age of twelve years,", //0
+                            " my mind become seriously impressed ", //1
+                            "with regard to the all-important concerns for the welfare of my immortal soul,", //2
+                            " which led me to searching the scriptures ", //3
+                            "-believing, as I was taught, ", //5
+                            "that they contained the word of God and thus applying myself to them. ", //3
+                            "My intimate acquaintance with those of different denominations led me to marvel exceedingly, for I discovered that they did not adorn their profession by a holy walk and godly conversation agreeable to what I found contained in that sacred depository. This was a grief to my soul.", //6
+                            "Thus, from the age of twelve years to fifteen I pondered many things in my heart ", //0
                             "concerning the situation of the world of mankind, ",
                             "the contentions and divisions, the wickedness and abominations, and the darkness which pervaded the minds of mankind.",
                             "My mind became exceedingly distressed, for I became convicted of my sins, ",
@@ -66,56 +64,56 @@ app.controller("visionCtrl", function($scope) {
                             "but I could find none that would believe the heavenly vision. ",
                             "Nevertheless, I pondered these things in my heart."];
 
-    $scope.account1835 = ["Being wrought up in my mind respecting the subject of religion, ",
-                           "and looking at the different systems taught the children of men, ",
-                            "I knew not who was right or who was wrong. ",
-                            " And considering it of the first importance that I should be right in matters that involve eternal consequences, ",
-                            "being thus perplexed in mind I retired to the silent grove and bowed down before the Lord, ",
-                            "under a realizing sense that he had said (if the Bible be true), ",
-                            "\"Ask, and you shall receive; knock, and it shall be opened; seek, and you shall find,\" ", 
-                            "and again, ",
-                            "\"If any man lack wisdom, let him ask of God, who giveth to all men liberally, and upbraideth not.\" ", 
-                            "\nInformation was what I most desired at this time, ",
-                            "and with a fixed determination to obtain it, ", 
-                            "I called upon the Lord for the first time in the place above stated. ",
-                            "Or in other words, I made a fruitless attempt to pray; ",
-                            "pray; my tongue seemed to be swollen in my mouth, so that I could not utter. ",
-                            "I heard a noise behind me, like some person walking towards me. ",
-                            "I strove again to pray but could not. ",
-                            "The noise of walking seemed to draw nearer. ",
-                            "I sprung up on my feet and looked around but saw no person or thing that was calculated to produce the noise of walking.",
-                            "\nI kneeled again. ",
-                            "My mouth was opened and my tongue liberated, ",
-                            "and I called on the Lord in mighty prayer. ",
-                            "A pillar of fire appeared above my head. ",
-                            "It presently rested down upon me and filled me with joy unspeakable. ",
-                            "A personage appeared in the midst of this pillar of flame, ",
-                            "which was spread all around and yet nothing consumed. ",
-                            "Another personage soon appeared, like unto the first. ",
-                            "He said unto me, \"Thy sins are forgiven thee.\" ",
-                            "He testified unto me that Jesus Christ is the son of God. ",
-                            "And I saw many angels in this vision. ",
-                            "I was about fourteen years old when I received this first communication."];
 
+    //At about the age of twelve years                        
     var dataObject = new Object;
     dataObject.scripture = ["I was about fourteen years old when I received this first communication.",
-                            "The boy Samuel ministered before the Lord under Eli. In those days the word of the Lord was rare; there were not many visions."];
+                          $scope.account1832.push("The boy Samuel ministered before the Lord under Eli. In those days the word of the Lord was rare; there were not many visions."];
     dataObject.scripLink = ["1835 Account",
-                            "1 Samuel 3:1 NIV"];
-    dataObject.picture = ["./imgs/joseph-smith-reading-bible.jpg"]
+                          $scope.account1832.push("1 Samuel 3:1 NIV"];
+    dataObject.picture = ["./imgs/joseph-smith-reading-bible.jpg"];
+    //my mind become seriously impressed
     var dataObject2 = new Object;
     dataObject2.scripture = ["Our responsibility is to always be in the right condition to receive the promptings or whisperings, the revelation, the inspiration of the Spirit. But He makes the decision of how and when."];
     dataObject2.scripLink = ["D. Todd Christofferson"];
     dataObject2.picture = ["./imgs/youngjsbad.jpg"];
+    //with regard to the all-important concerns for the welfare of my immortal soul
     var dataObject3 = new Object;
-    dataObject3.scripture = ["Honors bestowed upon me by men could not approach the inner peace provided by sealings performed in the house of the Lord."]
+    dataObject3.scripture = ["Honors bestowed upon me by men could not approach the inner peace provided by sealings performed in the house of the Lord."];
     dataObject3.scripLink = ["Russell M. Nelson"];
     dataObject3.picture = [""];
-    dataObject3.ref = ["https://www.churchofjesuschrist.org/study/general-conference/1992/04/doors-of-death?lang=eng"]
+    dataObject3.ref = ["https://www.churchofjesuschrist.org/study/general-conference/1992/04/doors-of-death?lang=eng"];
+    //which led me to searching the scriptures
+    //that they contained the word of God and thus applying myself to them.
+    var dataObject4 = new Object;
+    dataObject4.scripture = ["Search the scriptures; for in them ye think ye have eternal life: and they are they which testify of me.", 
+                            "Written scriptures, though very important, are insufficient without a living oracle, a man with the priesthood, a living prophet.",
+                            "[Scripture was] written for our learning, that we through patience and comfort of the scriptures might have hope.",
+                            "[Scripture is] given by inspiration of God ... is profitable for doctrine, for reproof, for correction, for instruction in righteousness: that the man of God may be perfect, throughly furnished unto all good works.",
+                            "The law of the Lord is perfect, converting the soul: the testimony of the Lord is sure, making wise the simple. The statutes of the Lord are right, rejoicing the heart: the commandment of the Lord is pure, enlightening the eyes.",
+                            "... were it not for these plates, which contain these records and these commandments, we must have suffered in ignorance, ... not knowing the mysteries of God. For it were not possible that our father, Lehi, could have remembered all these things, to have taught them to his children, except it were for the help of these plates."]
+    dataObject4.scripLink = ["John 5:39 KJV",
+                             "Robert J. Matthews",
+                             "Romans 15:4",
+                             "2 Timothy 3:16-17",
+                             "Psalm 19:7-8",
+                             "Mosiah 1:3-4"];
+    dataObject4.picture = [""];
+    dataObject4.ref = ["https://www.churchofjesuschrist.org/study/ensign/1973/05/searching-the-scriptures-what-do-the-scriptures-say-about-the-scriptures?lang=eng"];
+    //believing, as I was taught
+    var dataObject5 = {};
+    dataObject5.scripture = ["And they rehearsed unto me the words of their mothers, saying: We do not doubt our mothers knew it."];
+    dataObject5.scripLink = ["Alma 56:48"];
+    dataObject5.picture = [""];
     var crossRef1832 = [];
+    //My intimate acquaintance with those of different denominations led me to marvel exceedingly,
+    var dataObject6 = {};
+    dataObject6.scripture = ["My mind at times was greatly excited, the cry and tumult were so great and incessant. The Presbyterians were most decided against the Baptists and Methodists, and used all the powers of both reason and sophistry to prove their errors, or, at least, to make the people think they were in error. On the other hand, the Baptists and Methodists in their turn were equally zealous in endeavoring to establish their own tenets and disprove all others.In the midst of this war of words and tumult of opinions, I often said to myself: What is to be done? Who of all these parties are right; or, are they all wrong together? If any one of them be right, which is it, and how shall I know it?"];
+    dataObject6.scripLink = ["1838 Account"];
+    dataObject6.picture = ["methodistCampMeeting.jpg", "methodistCamp1839"];
+    crossRef1832.push(dataObject); crossRef1832.push(dataObject2); crossRef1832.push(dataObject3); crossRef1832.push(dataObject4);  crossRef1832.push(dataObject5); crossRef1832.push(dataObject4);  crossRef1832.push(dataObject6);
     crossRef1832.push(dataObject);
-    crossRef1832.push(dataObject2);
-    crossRef1832.push(dataObject3);
+    
     $scope.lastSelected = 0;
 
     $scope.info = function(x)
