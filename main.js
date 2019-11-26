@@ -68,9 +68,9 @@ app.controller("visionCtrl", function($scope) {
     //At about the age of twelve years                        
     var dataObject = new Object;
     dataObject.scripture = ["I was about fourteen years old when I received this first communication.",
-                          $scope.account1832.push("The boy Samuel ministered before the Lord under Eli. In those days the word of the Lord was rare; there were not many visions."];
+                          "The boy Samuel ministered before the Lord under Eli. In those days the word of the Lord was rare; there were not many visions."];
     dataObject.scripLink = ["1835 Account",
-                          $scope.account1832.push("1 Samuel 3:1 NIV"];
+                          "1 Samuel 3:1 NIV"];
     dataObject.picture = ["./imgs/joseph-smith-reading-bible.jpg"];
     //my mind become seriously impressed
     var dataObject2 = new Object;
