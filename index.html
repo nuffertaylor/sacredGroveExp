@@ -15,14 +15,14 @@
 <div class="onBackground">
 
 
-    <h1 id="headBar">The Sacred Grove</h1>
+    <div id="headBar"><span id="mainTitle">The Sacred Grove</span><span id="smallTitle">1832 Account</span></div>
     <div ng-app="visionText" ng-controller="visionCtrl">
         <div class="row">
             <div class = "col-1"></div>
             <div class = "col-10">
                 <div class="container" id="mainBox">
                     <div class="center textBox">
-                        <span ng-repeat="x in account1832" ng-click="info($index)" id="i-{{$index}}">
+                        <span ng-repeat="x in account1832" ng-click="info($index)" id="i-{{$index}}" class = "textClass">
                             {{x}}
                         </span>
                     </div>

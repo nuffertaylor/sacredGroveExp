@@ -9,22 +9,36 @@
   font-family: Tahoma;
   overflow-y: auto;
   opacity:.85;
+  font-size: 150%;
+}
+#headBar {
+  background: #bfbfbf;
+  opacity:.85;
+  padding : 15px;
+}
+#mainTitle {
+  font-size : 250%;
+  padding: 10px;
+  font-weight: 500;
 }
 .center {
   padding: 15px;
   margin-top: 8%;
 }
 #mainBox {
-  height: 33vw;
+  height: 100vw;
+}
+#textBox {
+  max-height: 50vw;
 }
 #pic {
   width: 86%;
 }
-span:hover{
+.textClass:hover{
   opacity:.75;
   cursor: pointer;
 }
-span:active {
+.textClass:active {
   opacity: .5;
 }
 span { /*prevents highlighting text in the box*/
