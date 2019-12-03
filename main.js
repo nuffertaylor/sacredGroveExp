@@ -3,6 +3,8 @@
 var app = angular.module("visionText", []);
 app.controller("visionCtrl", function($scope) {
     
+    $scope.hideQuote = true;
+    $scope.hideImg = true;
     $scope.account1832 = ["At about the age of twelve years,", //0
                             " my mind become seriously impressed ", //1
                             "with regard to the all-important concerns for the welfare of my immortal soul,", //2
@@ -115,16 +117,26 @@ app.controller("visionCtrl", function($scope) {
     crossRef1832.push(dataObject);
     
     $scope.lastSelected = 0;
-
+    
     $scope.info = function(x)
     {
-        //correctly passes in index
         document.getElementById("i-"+$scope.lastSelected).style.color = "white";
         $scope.lastSelected = x;
-        var whichScrip = (Math.round(Math.random() * crossRef1832[x].scripture.length-1));
-        $scope.textBox1 = crossRef1832[x].scripture[whichScrip];
-        $scope.author1 =  crossRef1832[x].scripLink[whichScrip];
-        $scope.pic1 = crossRef1832[x].picture[0];
+        if (Math.random() < .5) //do a quote
+        {
+            $scope.hideQuote = false;
+            $scope.hideImg = true;
+            var whichScrip = (Math.round(Math.random() * crossRef1832[x].scripture.length-1));
+            $scope.textBox1 = crossRef1832[x].scripture[whichScrip];
+            $scope.author1 =  crossRef1832[x].scripLink[whichScrip];
+        }
+        else
+        {
+            $scope.hideQuote = true;
+            $scope.hideImg = false;
+            var whichPic = (Math.round(Math.random() * crossRef1832[x].picture.length-1));
+            $scope.pic1 = crossRef1832[x].picture[whichPic];
+        }
         document.getElementById("i-"+x).style.color = "yellow";
     };
     

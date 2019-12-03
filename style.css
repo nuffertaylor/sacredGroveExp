@@ -10,23 +10,15 @@
   overflow-y: auto;
   opacity:.85;
 }
-#textBox1 {
-  position: fixed;
-  bottom: 5vw;
-  left: 5vw;
-  width: 300px;
-}
-#pic1 {
-  position: absolute;
-  width: 15%;
-  top: 5vw;
-  left: 5vw;
-}
 .center {
-  width: 45%;
-  height: 25vw;
-  margin-top: 8%;
   padding: 15px;
+  margin-top: 8%;
+}
+#mainBox {
+  height: 33vw;
+}
+#pic {
+  width: 86%;
 }
 span:hover{
   opacity:.75;
@@ -61,5 +53,5 @@ span { /*prevents highlighting text in the box*/
 }
 
 .onBackground {
-    position: relative;
+    position: absolute;
 }

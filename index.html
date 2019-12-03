@@ -15,17 +15,29 @@
 <div class="onBackground">
 
 
-    <h1>The Sacred Grove</h1>
+    <h1 id="headBar">The Sacred Grove</h1>
     <div ng-app="visionText" ng-controller="visionCtrl">
-        <div class="container">
-            <div class="center textBox">
-                <span ng-repeat="x in account1832" ng-click="info($index)" id="i-{{$index}}">
-                    {{x}}
-                </span>
+        <div class="row">
+            <div class = "col-2"></div>
+            <div class = "col-8">
+                <div class="container" id="mainBox">
+                    <div class="center textBox">
+                        <span ng-repeat="x in account1832" ng-click="info($index)" id="i-{{$index}}">
+                            {{x}}
+                        </span>
+                    </div>
+                </div>
             </div>
+            <div class = "col-2"></div>
         </div>
-            <div id="textBox1" class="textBox">{{textBox1}}<small>{{author1}}</small></div>
-            <img src = {{pic1}} id="pic1">
+        <div class="row">
+            <div class = "col-2"></div>
+            <div class = "col-8">
+                <div id="textBox" class="textBox center" ng-hide="hideQuote">{{textBox1}}<small><br>-{{author1}}</small></div>
+                <img src = {{pic1}} id="pic" class = "center" ng-hide="hideImg">
+            </div>
+            <div class = "col-2"></div>
+        </div>
     </div>
 
 
