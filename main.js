@@ -5,6 +5,7 @@ app.controller("visionCtrl", function($scope) {
     
     $scope.hideQuote = true;
     $scope.hideImg = true;
+    $scope.curAccount = "1832 Account";
     $scope.account1832 = ["At about the age of twelve years,", //0
                             " my mind become seriously impressed ", //1
                             "with regard to the all-important concerns for the welfare of my immortal soul,", //2
