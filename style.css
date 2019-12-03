@@ -9,24 +9,28 @@
   font-family: Tahoma;
   overflow-y: auto;
   opacity:.85;
-  font-size: 150%;
+  font-size: 200%;
 }
 #headBar {
   background: #bfbfbf;
   opacity:.85;
   padding : 15px;
+  width: 100%;
 }
 #mainTitle {
-  font-size : 250%;
+  font-size : 450%;
   padding: 10px;
   font-weight: 500;
+}
+#smallTitle {
+  font-size: 150%;
 }
 .center {
   padding: 15px;
   margin-top: 8%;
 }
 #mainBox {
-  height: 100vw;
+  height: 80vw;
 }
 #textBox {
   max-height: 50vw;
@@ -68,4 +72,5 @@ span { /*prevents highlighting text in the box*/
 
 .onBackground {
     position: absolute;
+    width: 100%;
 }
