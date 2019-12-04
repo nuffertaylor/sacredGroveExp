@@ -57,6 +57,7 @@ span { /*prevents highlighting text in the box*/
 .backgroundModule {
   width: 100%;
   height: 100%;
+    background-attachment: fixed;
 }
 .backgroundModule::before {
   content: "";

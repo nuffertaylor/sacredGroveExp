@@ -74,12 +74,12 @@ app.controller("visionCtrl", function($scope) {
                           "The boy Samuel ministered before the Lord under Eli. In those days the word of the Lord was rare; there were not many visions."];
     dataObject.scripLink = ["1835 Account",
                           "1 Samuel 3:1 NIV"];
-    dataObject.picture = ["./imgs/joseph-smith-reading-bible.jpg"];
+    dataObject.picture = ["joseph-smith-reading-bible.jpg"];
     //my mind become seriously impressed
     var dataObject2 = new Object;
     dataObject2.scripture = ["Our responsibility is to always be in the right condition to receive the promptings or whisperings, the revelation, the inspiration of the Spirit. But He makes the decision of how and when."];
     dataObject2.scripLink = ["D. Todd Christofferson"];
-    dataObject2.picture = ["./imgs/youngjsbad.jpg"];
+    dataObject2.picture = ["youngjsbad.jpg"];
     //with regard to the all-important concerns for the welfare of my immortal soul
     var dataObject3 = new Object;
     dataObject3.scripture = ["Honors bestowed upon me by men could not approach the inner peace provided by sealings performed in the house of the Lord."];
@@ -128,6 +128,7 @@ app.controller("visionCtrl", function($scope) {
             $scope.hideQuote = false;
             $scope.hideImg = true;
             var whichScrip = (Math.round(Math.random() * crossRef1832[x].scripture.length-1));
+            console.log(whichScrip + "was randomly chosen out of " + crossRef1832[x].scripture.length + "attributes.");
             $scope.textBox1 = crossRef1832[x].scripture[whichScrip];
             $scope.author1 =  crossRef1832[x].scripLink[whichScrip];
         }
@@ -136,7 +137,8 @@ app.controller("visionCtrl", function($scope) {
             $scope.hideQuote = true;
             $scope.hideImg = false;
             var whichPic = (Math.round(Math.random() * crossRef1832[x].picture.length-1));
-            $scope.pic1 = crossRef1832[x].picture[whichPic];
+            console.log(whichPic + "was randomly chosen out of " + crossRef1832[x].picture.length + "attributes.");
+            $scope.pic1 = "./imgs/" + crossRef1832[x].picture[whichPic];
         }
         document.getElementById("i-"+x).style.color = "yellow";
     };
