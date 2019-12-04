@@ -1,41 +1,46 @@
 //https://jsfiddle.net/hpksje62/1/
 
+//TODO
+//make functional on pc
+//add other visions
+// picture on every sentence, show quote on hover, and show attribution
 var app = angular.module("visionText", []);
 app.controller("visionCtrl", function($scope) {
     
     $scope.hideQuote = true;
     $scope.hideImg = true;
     $scope.curAccount = "1832 Account";
-    $scope.account1832 = ["At about the age of twelve years,", //0
-                            " my mind become seriously impressed ", //1
-                            "with regard to the all-important concerns for the welfare of my immortal soul,", //2
-                            " which led me to searching the scriptures ", //3
+    $scope.account1832 = ["At about the age of twelve years,", //1
+                            " my mind become seriously impressed ", //2
+                            "with regard to the all-important concerns for the welfare of my immortal soul,", //3
+                            " which led me to searching the scriptures ", //4
                             "-believing, as I was taught, ", //5
-                            "that they contained the word of God and thus applying myself to them. ", //3
-                            "My intimate acquaintance with those of different denominations led me to marvel exceedingly, for I discovered that they did not adorn their profession by a holy walk and godly conversation agreeable to what I found contained in that sacred depository. This was a grief to my soul.", //6
+                            "that they contained the word of God and thus applying myself to them. ", //4
+                            "My intimate acquaintance with those of different denominations led me to marvel exceedingly,",//6
+                            "for I discovered that they did not adorn their profession by a holy walk and godly conversation agreeable to what I found contained in that sacred depository.",//6
+                            "This was a grief to my soul.", //6
                             "Thus, from the age of twelve years to fifteen I pondered many things in my heart ", //0
-                            "concerning the situation of the world of mankind, ",
-                            "the contentions and divisions, the wickedness and abominations, and the darkness which pervaded the minds of mankind.",
-                            "My mind became exceedingly distressed, for I became convicted of my sins, ",
-                            "and by searching the scriptures I found that mankind did not come unto the Lord ",
-                            "but that they had apostatized from the true and living faith, ",
-                            "and there was no society or denomination that was built upon the gospel of Jesus Christ as recorded in the New Testament. ",
-                            "I felt to mourn for my own sins and for the sins of the world, ",
-                            "for I learned in the scriptures that ",
-                            "God was the same yesterday, today, and forever, ",
-                            "that he was no respecter of persons, for he was God.",
-                            "For I looked upon the sun, the glorious luminary of the earth, ",
-                            "and also the moon, rolling in their majesty through the heavens, ",
-                            "and also the stars shining in their courses, ",
-                            "and the earth also upon which I stood, ",
-                            "and the beasts of the field, and the fowls of heaven, and the fish of the waters, ",
-                            "and also man walking forth upon the face of the earth ",
-                            "in majesty and in the strength of beauty, ",
-                            "whose power and intelligence in governing the things which are so exceedingly great and marvelous, ",
-                            "even in the likeness of him who created them. ",
-                            "And when I considered upon these things, ",
-                            "my heart exclaimed, ",
-                            "\"Well hath the wise man said, 'It is a fool that saith in his heart, there is no God.'\" ",
+                            "concerning the situation of the world of mankind, ", //7
+                            "the contentions and divisions, the wickedness and abominations, and the darkness which pervaded the minds of mankind.", //7
+                            "My mind became exceedingly distressed, for I became convicted of my sins, ", //8
+                            "and by searching the scriptures I found that mankind did not come unto the Lord ",//4
+                            "but that they had apostatized from the true and living faith, ",//7
+                            "and there was no society or denomination that was built upon the gospel of Jesus Christ as recorded in the New Testament. ",//7
+                            "I felt to mourn for my own sins and for the sins of the world, ", //8
+                            "for I learned in the scriptures that ",//4
+                            "God was the same yesterday, today, and forever, ",//9
+                            "that he was no respecter of persons, for he was God.", //10
+                            "For I looked upon the sun, the glorious luminary of the earth, ", //11
+                            "and also the moon, rolling in their majesty through the heavens, ", //12
+                            "and also the stars shining in their courses, ", //13
+                            "and the earth also upon which I stood, ", //14
+                            "and the beasts of the field, and the fowls of heaven, and the fish of the waters, ", //14
+                            "and also man walking forth upon the face of the earth ", //14
+                            "in majesty and in the strength of beauty, ", //14
+                            "whose power and intelligence in governing the things which are so exceedingly great and marvelous, ", //15
+                            "even in the likeness of him who created them. ", //16
+                            "And when I considered upon these things, my heart exclaimed, ", //17
+                            "\"Well hath the wise man said, 'It is a fool that saith in his heart, there is no God.'\" ", //18
                             "My heart exclaimed, \"All, all these bear testimony and bespeak an omnipotent and omnipresent power, ",
                             "a being who maketh laws and decreeth and bindeth all things in their bounds, ",
                             "who filleth eternity, who was and is and will be from all eternity to eternity.\" ",
@@ -43,7 +48,7 @@ app.controller("visionCtrl", function($scope) {
                             "Therefore, I cried unto the Lord for mercy, for there was none else to whom I could go and obtain mercy. ",
                             "And the Lord heard my cry in the wilderness, ",
                             "and while in the attitude of calling upon the Lord, ",
-                            "in the sixteenth year of my age, ",
+                            "in the sixteenth year of my age, ", //1
                             "a pillar of light above the brightness of the sun at noonday came down from above and rested upon me. ",
                             "I was filled with the spirit of God, and the Lord opened the heavens upon me and I saw the Lord.",
                             "And he spake unto me, saying, ",
@@ -64,16 +69,18 @@ app.controller("visionCtrl", function($scope) {
                             "My soul was filled with love, ",
                             "and for many days I could rejoice with great joy. ",
                             "The Lord was with me, ",
-                            "but I could find none that would believe the heavenly vision. ",
+                            "but I could find none that would believe the heavenly vision. ", //
                             "Nevertheless, I pondered these things in my heart."];
 
 
     //At about the age of twelve years                        
     var dataObject = new Object;
     dataObject.scripture = ["I was about fourteen years old when I received this first communication.",
-                          "The boy Samuel ministered before the Lord under Eli. In those days the word of the Lord was rare; there were not many visions."];
+                          "The boy Samuel ministered before the Lord under Eli. In those days the word of the Lord was rare; there were not many visions.",
+                          "It is important to note that Joseph Smith had not attracted much notice between 1805 and 1819. He lived a rather simple life on the American frontier, an “obscure boy” as he recalled."];
     dataObject.scripLink = ["1835 Account",
-                          "1 Samuel 3:1 NIV"];
+                          "1 Samuel 3:1 NIV",
+                          "Richard Neitzel Holzapfel"];
     dataObject.picture = ["joseph-smith-reading-bible.jpg"];
     //my mind become seriously impressed
     var dataObject2 = new Object;
@@ -84,7 +91,7 @@ app.controller("visionCtrl", function($scope) {
     var dataObject3 = new Object;
     dataObject3.scripture = ["Honors bestowed upon me by men could not approach the inner peace provided by sealings performed in the house of the Lord."];
     dataObject3.scripLink = ["Russell M. Nelson"];
-    dataObject3.picture = [""];
+    dataObject3.picture = ["argue.jpg"];
     dataObject3.ref = ["https://www.churchofjesuschrist.org/study/general-conference/1992/04/doors-of-death?lang=eng"];
     //which led me to searching the scriptures
     //that they contained the word of God and thus applying myself to them.
@@ -101,21 +108,89 @@ app.controller("visionCtrl", function($scope) {
                              "2 Timothy 3:16-17",
                              "Psalm 19:7-8",
                              "Mosiah 1:3-4"];
-    dataObject4.picture = [""];
+    dataObject4.picture = ["josephReads.jpeg","josephReadsBible.jpg"];
     dataObject4.ref = ["https://www.churchofjesuschrist.org/study/ensign/1973/05/searching-the-scriptures-what-do-the-scriptures-say-about-the-scriptures?lang=eng"];
     //believing, as I was taught
     var dataObject5 = {};
-    dataObject5.scripture = ["And they rehearsed unto me the words of their mothers, saying: We do not doubt our mothers knew it."];
-    dataObject5.scripLink = ["Alma 56:48"];
-    dataObject5.picture = [""];
+    dataObject5.scripture = ["The sweetest union and happiness pervaded our house, and tranquility reigned in our midst.", "And they rehearsed unto me the words of their mothers, saying: We do not doubt our mothers knew it.", "[Asael Smith, Joseph's Grandfather] said that he always knew that God was going to raise up some branch of his family to be a great benefit to mankind."];
+    dataObject5.scripLink = ["Lucy Mack Smith","Alma 56:48", "George A. Smith,  Millennial Star, June 24, 1865"];
+    dataObject5.picture = ["smithFamily.jpg"];
     var crossRef1832 = [];
     //My intimate acquaintance with those of different denominations led me to marvel exceedingly,
     var dataObject6 = {};
     dataObject6.scripture = ["My mind at times was greatly excited, the cry and tumult were so great and incessant. The Presbyterians were most decided against the Baptists and Methodists, and used all the powers of both reason and sophistry to prove their errors, or, at least, to make the people think they were in error. On the other hand, the Baptists and Methodists in their turn were equally zealous in endeavoring to establish their own tenets and disprove all others.In the midst of this war of words and tumult of opinions, I often said to myself: What is to be done? Who of all these parties are right; or, are they all wrong together? If any one of them be right, which is it, and how shall I know it?"];
     dataObject6.scripLink = ["1838 Account"];
-    dataObject6.picture = ["methodistCampMeeting.jpg", "methodistCamp1839"];
-    crossRef1832.push(dataObject); crossRef1832.push(dataObject2); crossRef1832.push(dataObject3); crossRef1832.push(dataObject4);  crossRef1832.push(dataObject5); crossRef1832.push(dataObject4);  crossRef1832.push(dataObject6);
-    crossRef1832.push(dataObject);
+    dataObject6.picture = ["methodistCampMeeting.jpg", "methodistCamp1839.jpg", "argue.jpg", "josephPonders.jpeg"];
+    var dataObject7 = {};
+    dataObject7.scripture = ["Corrupt are they, and have done abominable iniquity: there is none that doeth good. God looked down from heaven upon the children of men, to see if there were any that did understand, that did seek God. Every one of them is gone back: they are altogether become filthy; there is none that doeth good, no, not one.",
+                            "Thou knowest the people, that they are set on evil. So they said unto me: Make us a god, which shall go before us; for as for this Moses, the man that brought us up out of the land of Egypt, we know not what is become of him.",
+                            "But there were false prophets also among the people, even as there shall be false teachers among you, who privily shall bring in damnable heresies, even denying the Lord that bought them, and bring upon themselves swift destruction. And many shall follow their pernicious ways; by reason of whom the way of truth shall be evil spoken of. And through covetousness shall they with feigned words make merchandise of you: whose judgment now of a long time lingereth not, and their damnation slumbereth not.",
+                            "The brilliant minds with their philosophies, knowing much about the Christian traditions and the pagan philosophies, would combine all elements to please everybody. They replaced the simple ways and program of the Christ with spectacular rituals, colorful display, impressive pageantry, and limitless pomposity, and called it Christianity. They had replaced the glorious, divine plan of exaltation of Christ with an elaborate, colorful, man-made system."];
+    dataObject7.scripLink = ["Psalm 53:1-3 KJV",
+                            "Exodus 32:22-23",
+                            "2 Peter 2:1-3",
+                            "Spencer W. Kimball"];
+    dataObject7.picture = ["worldDarkEnough.jpg",
+                            "mosesTablets.jpg",
+                            "darkPlanet.jpg",
+                            "great-apostasy.jpg",
+                            "Man-of-Rejection.jpg"];
+    var dataObject8 = {};
+    dataObject8.scripture = ["But your iniquities have separated between you and your God, and your sins have hid his face from you, that he will not hear.",
+                                "For I will be merciful to their unrighteousness, and their sins and their lawless deeds I will remember no more.",
+                                "For God did not send His Son into the world to condemn the world, but that the world through Him might be saved",
+                                "If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness."];
+    dataObject8.scripLink = ["Isaiah 59:2",
+                                "Hebrews 8:12",
+                                "John 3:17",
+                                "1 John 1:9"];
+    dataObject8.picture = ["sinRoad.jpg","adamCast.jpeg", "Man-of-Patience.jpg"];
+    var dataObject9 = {};
+    dataObject9.scripture = ["Jesus Christ is the same yesterday and today and forever.", "For I the Lord do not change.", "I am Alpha and Omega, the beginning and the ending, saith the Lord, which is, and which was, and which is to come, the Almighty.",
+                            "God is the same yesterday, today, and forever, but we are not. Each day, ours is the challenge to access the power of the Atonement so that we can truly change, become more Christlike, and qualify for the gift of exaltation and live eternally with God, Jesus Christ, and our families. For these powers, privileges, and gospel gifts, thanks be to God!"];
+    dataObject9.scripLink = ["Hebrews 13:8", "Malachi 3:6", "Revelation 1:8", "Russell M. Nelson"];
+    dataObject9.picture = ["Man-of-Kindness.jpg", 'theSameChrist.jpg'];
+    var dataObject10 = {};
+    dataObject10.scripture = ["Then Peter opened his mouth, and said, Of a truth I perceive that God is no respecter of persons: But in every nation he that feareth him, and worketh righteousness, is accepted with him."];
+    dataObject10.scripLink = ["Acts 10:34-35"];
+    dataObject10.picture = ["acts10.jpg"];
+    var dataObject11 = {};
+    dataObject11.scripture = ["These are they whose bodies are celestial, whose glory is that of the sun, even the glory of God, the highest of all, whose glory the sun of the firmament is written of as being typical."];
+    dataObject11.scripLink = ["D&C 76:70"];
+    dataObject11.picture = ["heavens.png"];
+    var dataObject12 = {};
+    dataObject12.scripture = ["And again, we saw the terrestrial world, and behold and lo, these are they who are of the terrestrial, whose glory differs from that of the church of the Firstborn who have received the fulness of the Father, even as that of the moon differs from the sun in the firmament."];
+    dataObject12.scripLink = ["D&C 76:71"];
+    dataObject12.picture = ["blueMoon.jpg"];
+    var dataObject13 = {};
+    dataObject13.scripture = ["And again, we saw the glory of the telestial, which glory is that of the lesser, even as the glory of the stars differs from that of the glory of the moon in the firmament."];
+    dataObject13.scripLink = ["D&C 76:81"];
+    dataObject13.picture = ["moon&stars.jpg"];
+    var dataObject14 = {};
+    dataObject14.scripture = ["And to every beast of the earth, and to every fowl of the air, and to every thing that creepeth upon the earth, wherein there is life, I have given."];
+    dataObject14.scripLink = ["Genesis 1:30"];
+    dataObject14.picture = ["jehovahCreates.jpg", "animalCreation.jpg", "adamCreation.jpg"];
+    var dataObject15 = {};
+    dataObject15.scripture = ["The glory of God is intelligence, or, in other words, light and truth."];
+    dataObject15.scripLink = ["D&C 93:26"];
+    dataObject15.picture = ["gloryOfGod.jpg"];
+    var dataObject16 = {};
+    dataObject16.scripture = ["And God said, Let us make man in our image, after our likeness: and let them have dominion over the fish of the sea, and over the fowl of the air, and over the cattle, and over all the earth, and over every creeping thing that creepeth upon the earth. So God created man in his own image, in the image of God created he him; male and female created he them."];
+    dataObject16.scripLink = ["Genesis 1:26-27 KJV"];
+    dataObject16.picture = ["adamCreation.jpg"];
+    var dataObject17 = {};
+    dataObject17.scripture = ["But Mary kept all these things, and pondered them in her heart."];
+    dataObject17.scripLink = ["Luke 2:30 KJV"];
+    dataObject17.picture = ["maryPonder.jpg"];
+    var dataObject18 = {};
+    dataObject18.scripture = ["The fool hath said in his heart, There is no God. They are corrupt, they have done abominable works, there is none that doeth good."];
+    dataObject18.scripLink = ["Psalm 14:1"];
+    dataObject18.picture = ["davidHarp.jpg"];
+    
+    crossRef1832.push(dataObject); crossRef1832.push(dataObject2); crossRef1832.push(dataObject3); crossRef1832.push(dataObject4);  crossRef1832.push(dataObject5); crossRef1832.push(dataObject4);  crossRef1832.push(dataObject6); crossRef1832.push(dataObject6); crossRef1832.push(dataObject6);
+    crossRef1832.push(dataObject);  crossRef1832.push(dataObject7); crossRef1832.push(dataObject7); crossRef1832.push(dataObject8); crossRef1832.push(dataObject4); crossRef1832.push(dataObject7); crossRef1832.push(dataObject7); crossRef1832.push(dataObject8); crossRef1832.push(dataObject4);
+    crossRef1832.push(dataObject9); crossRef1832.push(dataObject10); crossRef1832.push(dataObject11); crossRef1832.push(dataObject12); crossRef1832.push(dataObject13); crossRef1832.push(dataObject14); crossRef1832.push(dataObject14); crossRef1832.push(dataObject14); crossRef1832.push(dataObject14); 
+    crossRef1832.push(dataObject15); crossRef1832.push(dataObject16); crossRef1832.push(dataObject17); crossRef1832.push(dataObject18);
     
     $scope.lastSelected = 0;
     
@@ -123,11 +198,11 @@ app.controller("visionCtrl", function($scope) {
     {
         document.getElementById("i-"+$scope.lastSelected).style.color = "white";
         $scope.lastSelected = x;
-        if (Math.random() < .5) //do a quote
+        if (Math.random() < .55) //do a quote
         {
             $scope.hideQuote = false;
             $scope.hideImg = true;
-            var whichScrip = (Math.round(Math.random() * crossRef1832[x].scripture.length-1));
+            var whichScrip = (Math.round(Math.random() * (crossRef1832[x].scripture.length-1)));
             console.log(whichScrip + "was randomly chosen out of " + crossRef1832[x].scripture.length + "attributes.");
             $scope.textBox1 = crossRef1832[x].scripture[whichScrip];
             $scope.author1 =  crossRef1832[x].scripLink[whichScrip];
@@ -136,9 +211,10 @@ app.controller("visionCtrl", function($scope) {
         {
             $scope.hideQuote = true;
             $scope.hideImg = false;
-            var whichPic = (Math.round(Math.random() * crossRef1832[x].picture.length-1));
+            var whichPic = (Math.round(Math.random() * (crossRef1832[x].picture.length-1)));
             console.log(whichPic + "was randomly chosen out of " + crossRef1832[x].picture.length + "attributes.");
             $scope.pic1 = "./imgs/" + crossRef1832[x].picture[whichPic];
+            console.log($scope.pic1);
         }
         document.getElementById("i-"+x).style.color = "yellow";
     };
