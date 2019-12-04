@@ -203,7 +203,6 @@ app.controller("visionCtrl", function($scope) {
             $scope.hideQuote = false;
             $scope.hideImg = true;
             var whichScrip = (Math.round(Math.random() * (crossRef1832[x].scripture.length-1)));
-            console.log(whichScrip + "was randomly chosen out of " + crossRef1832[x].scripture.length + "attributes.");
             $scope.textBox1 = crossRef1832[x].scripture[whichScrip];
             $scope.author1 =  crossRef1832[x].scripLink[whichScrip];
         }
@@ -212,9 +211,7 @@ app.controller("visionCtrl", function($scope) {
             $scope.hideQuote = true;
             $scope.hideImg = false;
             var whichPic = (Math.round(Math.random() * (crossRef1832[x].picture.length-1)));
-            console.log(whichPic + "was randomly chosen out of " + crossRef1832[x].picture.length + "attributes.");
             $scope.pic1 = "./imgs/" + crossRef1832[x].picture[whichPic];
-            console.log($scope.pic1);
         }
         document.getElementById("i-"+x).style.color = "yellow";
     };
