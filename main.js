@@ -41,12 +41,13 @@ app.controller("visionCtrl", function($scope) {
                             "even in the likeness of him who created them. ", //16
                             "And when I considered upon these things, my heart exclaimed, ", //17
                             "\"Well hath the wise man said, 'It is a fool that saith in his heart, there is no God.'\" ", //18
-                            "My heart exclaimed, \"All, all these bear testimony and bespeak an omnipotent and omnipresent power, ",
-                            "a being who maketh laws and decreeth and bindeth all things in their bounds, ",
-                            "who filleth eternity, who was and is and will be from all eternity to eternity.\" ",
-                            "And I considered all these things and that that being seeketh such to worship him as worship him in spirit and in truth.",
-                            "Therefore, I cried unto the Lord for mercy, for there was none else to whom I could go and obtain mercy. ",
-                            "And the Lord heard my cry in the wilderness, ",
+                            "My heart exclaimed, \"All, all these bear testimony and bespeak an omnipotent and omnipresent power, ", //19
+                            "a being who maketh laws and decreeth and bindeth all things in their bounds, ", //20
+                            "who filleth eternity, who was and is and will be from all eternity to eternity.\" ", //9
+                            "And I considered all these things ", //17
+                            "and that that being seeketh such to worship him as worship him in spirit and in truth. ",//21
+                            "Therefore, I cried unto the Lord for mercy, for there was none else to whom I could go and obtain mercy. ", //22
+                            "And the Lord heard my cry in the wilderness, ", //23
                             "and while in the attitude of calling upon the Lord, ",
                             "in the sixteenth year of my age, ", //1
                             "a pillar of light above the brightness of the sun at noonday came down from above and rested upon me. ",
@@ -118,15 +119,19 @@ app.controller("visionCtrl", function($scope) {
     var crossRef1832 = [];
     //My intimate acquaintance with those of different denominations led me to marvel exceedingly,
     var dataObject6 = {};
-    dataObject6.scripture = ["My mind at times was greatly excited, the cry and tumult were so great and incessant. The Presbyterians were most decided against the Baptists and Methodists, and used all the powers of both reason and sophistry to prove their errors, or, at least, to make the people think they were in error. On the other hand, the Baptists and Methodists in their turn were equally zealous in endeavoring to establish their own tenets and disprove all others.In the midst of this war of words and tumult of opinions, I often said to myself: What is to be done? Who of all these parties are right; or, are they all wrong together? If any one of them be right, which is it, and how shall I know it?"];
-    dataObject6.scripLink = ["1838 Account"];
+    dataObject6.scripture = ["My mind at times was greatly excited, the cry and tumult were so great and incessant. The Presbyterians were most decided against the Baptists and Methodists, and used all the powers of both reason and sophistry to prove their errors, or, at least, to make the people think they were in error. On the other hand, the Baptists and Methodists in their turn were equally zealous in endeavoring to establish their own tenets and disprove all others.In the midst of this war of words and tumult of opinions, I often said to myself: What is to be done? Who of all these parties are right; or, are they all wrong together? If any one of them be right, which is it, and how shall I know it?",
+                             "To profess godliness without its benign influence upon the heart, was a thing so foreign from his feelings, that his spirit was not at rest day nor night. "];
+    dataObject6.scripLink = ["1838 Account",
+                                "Oliver Cowdery"];
     dataObject6.picture = ["methodistCampMeeting.jpg", "methodistCamp1839.jpg", "argue.jpg", "josephPonders.jpeg"];
     var dataObject7 = {};
     dataObject7.scripture = ["Corrupt are they, and have done abominable iniquity: there is none that doeth good. God looked down from heaven upon the children of men, to see if there were any that did understand, that did seek God. Every one of them is gone back: they are altogether become filthy; there is none that doeth good, no, not one.",
+                             "There was a great awakening, or excitement raised on the subject of religion, and much enquiry for the word of life. Large additions were made to the Methodist, Presbyterian, and Baptist churches. [A] general struggle was made by the leading characters of the different sects, for proselytes. Then strife seemed to take the place of that apparent union and harmony which had previously characterized the moves and exhortations of the old professors, and a cry—I am right—you are wrong—was introduced in their stead.",
                             "Thou knowest the people, that they are set on evil. So they said unto me: Make us a god, which shall go before us; for as for this Moses, the man that brought us up out of the land of Egypt, we know not what is become of him.",
                             "But there were false prophets also among the people, even as there shall be false teachers among you, who privily shall bring in damnable heresies, even denying the Lord that bought them, and bring upon themselves swift destruction. And many shall follow their pernicious ways; by reason of whom the way of truth shall be evil spoken of. And through covetousness shall they with feigned words make merchandise of you: whose judgment now of a long time lingereth not, and their damnation slumbereth not.",
                             "The brilliant minds with their philosophies, knowing much about the Christian traditions and the pagan philosophies, would combine all elements to please everybody. They replaced the simple ways and program of the Christ with spectacular rituals, colorful display, impressive pageantry, and limitless pomposity, and called it Christianity. They had replaced the glorious, divine plan of exaltation of Christ with an elaborate, colorful, man-made system."];
     dataObject7.scripLink = ["Psalm 53:1-3 KJV",
+                            "Oliver Cowdery , Messenger and Advocate",
                             "Exodus 32:22-23",
                             "2 Peter 2:1-3",
                             "Spencer W. Kimball"];
@@ -134,6 +139,7 @@ app.controller("visionCtrl", function($scope) {
                             "mosesTablets.jpg",
                             "darkPlanet.jpg",
                             "great-apostasy.jpg",
+                            "lehi.jpg",
                             "Man-of-Rejection.jpg"];
     var dataObject8 = {};
     dataObject8.scripture = ["But your iniquities have separated between you and your God, and your sins have hid his face from you, that he will not hear.",
@@ -186,11 +192,34 @@ app.controller("visionCtrl", function($scope) {
     dataObject18.scripture = ["The fool hath said in his heart, There is no God. They are corrupt, they have done abominable works, there is none that doeth good."];
     dataObject18.scripLink = ["Psalm 14:1"];
     dataObject18.picture = ["davidHarp.jpg"];
+    var dataObject19 = {};
+    dataObject19.scripture = ["All things denote there is a God; yea, even the earth, and all things that are upon the face of it, yea, and its motion, yea, and also all the zplanets which move in their regular form do witness that there is a Supreme Creator."];
+    dataObject19.scripLink = ["Alma 30:44"];
+    dataObject19.picture = ["zionPark.jpg"];
+    var dataObject20 = {};
+    dataObject20.scripture = ["Many now claim that truth is relative and that there is no such thing as divine law or a divine plan. Such a claim is simply not true. There is a difference between right and wrong. Truth is based upon the laws God has established for the dependability, protection, and nurturing of His children. Eternal laws operate in and affect each of our lives, whether we believe them or not."];
+    dataObject20.scripLink = ["Russell M. Nelson"];
+    dataObject20.picture = ["tenCommand.jpg"];
+    var dataObject21 = {};
+    dataObject21.scripture = ["God is Spirit, and those who worship Him must worship in spirit and truth."];
+    dataObject21.scripLink = ["John 4:24 NKJV"];
+    dataObject21.picture = ["spiritTruth.jpg"];
+    var dataObject22 = {};
+    dataObject22.scripture = ["I called upon the Lord for the first time in the place above stated. Or in other words, I made a fruitless attempt to pray; my tongue seemed to be swollen in my mouth, so that I could not utter.",
+                              "After I had retired to the place where I had previously designed to go, having looked around me, and finding myself alone, I kneeled down and began to offer up the desires of my heart to God."];
+    dataObject22.scripLink = ["1835 Account",
+                              "1838 Account (Joseph Smith History 1:15)"];
+    dataObject22.picture = ["wideVision.jpg", "lightAndDark.jpg", "lackWisdom.jpg"];
+    var dataObject23 = {};
+    dataObject23.scripture =["While fervently engaged in supplication, my mind was taken away from the objects with which I was surrounded, and I was enwrapped in a heavenly vision"];
+    dataObject23.scripLink = ["1842 Account"];
+    dataObject23.picture = ["joedark.jpg"];
     
     crossRef1832.push(dataObject); crossRef1832.push(dataObject2); crossRef1832.push(dataObject3); crossRef1832.push(dataObject4);  crossRef1832.push(dataObject5); crossRef1832.push(dataObject4);  crossRef1832.push(dataObject6); crossRef1832.push(dataObject6); crossRef1832.push(dataObject6);
     crossRef1832.push(dataObject);  crossRef1832.push(dataObject7); crossRef1832.push(dataObject7); crossRef1832.push(dataObject8); crossRef1832.push(dataObject4); crossRef1832.push(dataObject7); crossRef1832.push(dataObject7); crossRef1832.push(dataObject8); crossRef1832.push(dataObject4);
     crossRef1832.push(dataObject9); crossRef1832.push(dataObject10); crossRef1832.push(dataObject11); crossRef1832.push(dataObject12); crossRef1832.push(dataObject13); crossRef1832.push(dataObject14); crossRef1832.push(dataObject14); crossRef1832.push(dataObject14); crossRef1832.push(dataObject14); 
-    crossRef1832.push(dataObject15); crossRef1832.push(dataObject16); crossRef1832.push(dataObject17); crossRef1832.push(dataObject18);
+    crossRef1832.push(dataObject15); crossRef1832.push(dataObject16); crossRef1832.push(dataObject17); crossRef1832.push(dataObject18); crossRef1832.push(dataObject19); crossRef1832.push(dataObject20); crossRef1832.push(dataObject9); crossRef1832.push(dataObject17); crossRef1832.push(dataObject21);
+    crossRef1832.push(dataObject22); crossRef1832.push(dataObject23);
     
     $scope.lastSelected = 0;
     
