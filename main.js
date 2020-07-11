@@ -1,4 +1,5 @@
 //https://jsfiddle.net/hpksje62/1/
+//http://shorturl.at/glpJN
 
 //TODO
 //make functional on pc
@@ -48,41 +49,38 @@ app.controller("visionCtrl", function($scope) {
                             "and that that being seeketh such to worship him as worship him in spirit and in truth. ",//21
                             "Therefore, I cried unto the Lord for mercy, for there was none else to whom I could go and obtain mercy. ", //22
                             "And the Lord heard my cry in the wilderness, ", //23
-                            "and while in the attitude of calling upon the Lord, ",
+                            "and while in the attitude of calling upon the Lord, ", //24
                             "in the sixteenth year of my age, ", //1
-                            "a pillar of light above the brightness of the sun at noonday came down from above and rested upon me. ",
-                            "I was filled with the spirit of God, and the Lord opened the heavens upon me and I saw the Lord.",
-                            "And he spake unto me, saying, ",
-                            "\"Joseph, my son, thy sins are forgiven thee. ",
-                            "Go thy way, walk in my statutes, and keep my commandments. ",
-                            "Behold, I am the Lord of glory. ",
-                            "I was crucified for the world, that all those who believe on my name may have eternal life. ",
-                            "Behold, the world lieth in sin at this time, ",
-                            "and none doeth good, no, not one. ",
-                            "They have turned aside from the gospel and keep not my commandments. ",
-                            "They draw near to me with their lips while their hearts are far from me. ",
-                            "And mine anger is kindling against the inhabitants of the earth, ",
-                            "to visit them according to their ungodliness ",
-                            "and to bring to pass that which hath been spoken by the mouth of the prophets and apostles. ",
-                            "Behold and lo, I come quickly, ",
-                            "as it is written of me, ",
-                            "in the cloud, clothed in the glory of my Father.\"",
-                            "My soul was filled with love, ",
-                            "and for many days I could rejoice with great joy. ",
-                            "The Lord was with me, ",
-                            "but I could find none that would believe the heavenly vision. ", //
-                            "Nevertheless, I pondered these things in my heart."];
+                            "a pillar of light above the brightness of the sun at noonday came down from above and rested upon me. ", //25
+                            "I was filled with the spirit of God, and the Lord opened the heavens upon me and I saw the Lord.", //26
+                            "And he spake unto me, saying, \"Joseph, my son, thy sins are forgiven thee. ", //27
+                            "Go thy way, walk in my statutes, and keep my commandments. ", //28
+                            "Behold, I am the Lord of glory. I was crucified for the world, that all those who believe on my name may have eternal life. ", //29
+                            "Behold, the world lieth in sin at this time, ",//7
+                            //it's interesting that almost all of Joseph presuppositions were confirmed by the Savior
+                            "and none doeth good, no, not one. ", //7
+                            "They have turned aside from the gospel and keep not my commandments. ", //7
+                            "They draw near to me with their lips while their hearts are far from me. ", //7
+                            "And mine anger is kindling against the inhabitants of the earth, ", //30
+                            "to visit them according to their ungodliness ", //30
+                            "and to bring to pass that which hath been spoken by the mouth of the prophets and apostles. ", //31
+                            "Behold and lo, I come quickly, as it is written of me, in the cloud, clothed in the glory of my Father.\"", //32
+                            "My soul was filled with love, ", //33
+                            "and for many days I could rejoice with great joy. ", //33
+                            "The Lord was with me, ", //33
+                            "but I could find none that would believe the heavenly vision. ", //34
+                            "Nevertheless, I pondered these things in my heart."]; //17
 
 
     //At about the age of twelve years                        
-    var dataObject = new Object;
-    dataObject.scripture = ["I was about fourteen years old when I received this first communication.",
+    var dataObject1 = new Object;
+    dataObject1.scripture = ["I was about fourteen years old when I received this first communication.",
                           "The boy Samuel ministered before the Lord under Eli. In those days the word of the Lord was rare; there were not many visions.",
                           "It is important to note that Joseph Smith had not attracted much notice between 1805 and 1819. He lived a rather simple life on the American frontier, an “obscure boy” as he recalled."];
-    dataObject.scripLink = ["1835 Account",
+    dataObject1.scripLink = ["1835 Account",
                           "1 Samuel 3:1 NIV",
                           "Richard Neitzel Holzapfel"];
-    dataObject.picture = ["joseph-smith-reading-bible.jpg"];
+    dataObject1.picture = ["joseph-smith-reading-bible.jpg", "leanIn.png"];
     //my mind become seriously impressed
     var dataObject2 = new Object;
     dataObject2.scripture = ["Our responsibility is to always be in the right condition to receive the promptings or whisperings, the revelation, the inspiration of the Spirit. But He makes the decision of how and when."];
@@ -187,7 +185,7 @@ app.controller("visionCtrl", function($scope) {
     var dataObject17 = {};
     dataObject17.scripture = ["But Mary kept all these things, and pondered them in her heart."];
     dataObject17.scripLink = ["Luke 2:30 KJV"];
-    dataObject17.picture = ["maryPonder.jpg"];
+    dataObject17.picture = ["maryPonder.jpg", "contemplation.jpg"];
     var dataObject18 = {};
     dataObject18.scripture = ["The fool hath said in his heart, There is no God. They are corrupt, they have done abominable works, there is none that doeth good."];
     dataObject18.scripLink = ["Psalm 14:1"];
@@ -211,15 +209,74 @@ app.controller("visionCtrl", function($scope) {
                               "1838 Account (Joseph Smith History 1:15)"];
     dataObject22.picture = ["wideVision.jpg", "lightAndDark.jpg", "lackWisdom.jpg"];
     var dataObject23 = {};
-    dataObject23.scripture =["While fervently engaged in supplication, my mind was taken away from the objects with which I was surrounded, and I was enwrapped in a heavenly vision"];
-    dataObject23.scripLink = ["1842 Account"];
+    dataObject23.scripture =["He, therefore, retired to a secret place, in a grove, but a short distance from his father's house, and knelt down, and began to call upon the Lord.",
+                        "While fervently engaged in supplication, my mind was taken away from the objects with which I was surrounded, and I was enwrapped in a heavenly vision"];
+    dataObject23.scripLink = ["Orson Pratt",
+                                "1842 Account"];
     dataObject23.picture = ["joedark.jpg"];
+    var dataObject24 = {};
+    dataObject24.scripture = ["He was enabled to pray, in fervency of the spirit, and in faith. And, while thus pouring out his soul, anxiously desiring an answer from God, he, at length, saw a very bright and glorious light."];
+    dataObject24.scripLink = ["Orson Pratt"];
+    dataObject24.picture = ["josephPrays.jpg", "grovePrayer.jpg"];
+    var dataObject25 = {};
+    dataObject25.scripture =["A pillar of fire appeared above my head. It presently rested down upon me and filled me with joy unspeakable.",
+                                "I saw a pillar of light exactly over my head, above the brightness of the dsun, which descended gradually until it fell upon me."];
+    dataObject25.scripLink = ["1835 Account", "1838 Account"];
+    dataObject25.picture = ["pillarOfFire.jpg", "josephVis.png", "circOfLight.jpg"];
+    var dataObject26 = {};
+    dataObject26.scripture = ["The Spirit of God speaking to the spirit of man has power to impart truth. Through the Holy Ghost the truth is woven into the very fibre and sinews of the body so that it cannot be forgotten.", "And it came to pass that as he read, he was filled with the Spirit of the Lord."];
+    dataObject26.scripLink = ["Joseph Fielding Smith", "1 Nephi 1:12"];
+    dataObject26.picture = ["surroundedBySpirit.jpeg", "benCrowderVis6.jpg"];
+    var dataObject27 = {};
+    dataObject27.scripture = ["Yea, and as often as my people repent will I forgive them their trespasses against me.",
+                                "If we confess our sins, he is faithful and just and will forgive us our sins and purify us from all unrighteousness."];
+    dataObject27.scripLink = ["Mosiah 26:30",
+                                "1 John 1:9"];
+    dataObject27.picture = ["cryingJoseph.jpg", "blockyFirstVision.jpg"];
+    var dataObject28 = {};
+    dataObject28.scripture = ["Jesus said unto her, Neither do I condemn thee: go, and sin no more."];
+    dataObject28.scripLink = ["John 8:11"];
+    dataObject28.picture = ["firstSculp.jpg"];
+    var dataObject29 = {};
+    dataObject29.scripture = ["When the light rested upon me I saw two Personages, whose brightness and glory defy all description, standing above me in the air. One of them spake unto me, calling me by name and said, pointing to the other—This is My Beloved Son. Hear Him!",
+                                "Another personage soon appeared, like unto the first. He said unto me, “Thy sins are forgiven thee.” He testified unto me that Jesus Christ is the son of God.",
+                                "Which suffering caused myself, even God, the greatest of all, to tremble because of pain, and to bleed at every pore, and to suffer both body and spirit—and would that I might not drink the bitter cup, and shrink— Nevertheless, glory be to the Father, and I partook and finished my preparations unto the children of men."];
+    dataObject29.scripLink = ["1838 Account",
+                                "1835 Account",
+                                "D&C 19:18"];
+    dataObject29.picture = ["Man-of-Joy.jpg"];
+    var dataObject30 = {};
+    dataObject30.scripture = ["For the wrath of God is revealed from heaven against all ungodliness and unrighteousness of men, who hold the truth in unrighteousness;",
+                            "God’s wrath is never the capricious, self-indulgent, irritable, morally ignoble thing that human anger so often is. It is, instead, a right and necessary reaction to objective moral evil"];
+    dataObject30.scripLink = ["Romans 1:18", "J.J. Packer"];
+    dataObject30.picture = ["firstVisPalmyra.jpg", "glass.jpg"];
+    var dataObject31 ={};
+    dataObject31.scripture =["...and the stone that smote the image became a great mountain, and filled the whole earth."];
+    dataObject31.scripLink =["Daniel 2:35"];
+    dataObject31.picture=["mosesProphet.jpg"];
+    var dataObject32 = {};
+    dataObject32.scripture = ["And, behold, I come quickly; and my reward is with me, to give every man according as his work shall be."];
+    dataObject32.scripLink = ["Revelation 22:12 KJV"];
+    dataObject32.picture = ["ascension.jpg"];
+    var dataObject33 = {};
+    dataObject33.scripture = ["After which, the vision withdrew, leaving his mind in a state of calmness and peace, indesribable.",
+                                "It presently rested down upon me and filled me with joy unspeakable.",
+                                "For I am persuaded, that neither death, nor life, nor angels, nor principalities, nor powers, nor things present, nor things to come, Nor height, nor depth, nor any other creature, shall be able to separate us from the love of God, which is in Christ Jesus our Lord."];
+    dataObject33.scripLink = ["Orson Pratt", "1835 Account", "Romans 8:38-39"];
+    dataObject33.picture = ["contemplation.jpg"];
+    var dataObject34 = {};
+    dataObject34.scripture = ["It caused me serious reflection then, and often has since, how very strange it was that an obscure boy, of a little over fourteen years of age, and one, too, who was doomed to the necessity of obtaining a scanty maintenance by his daily labor, should be thought a character of sufficient importance to attract the attention of the great ones of the most popular sects of the day, and in a manner to create in them a spirit of the most bitter persecution and reviling. But strange or not, so it was, and it was often the cause of great sorrow to myself. So it was with me. I had actually seen a light, and in the midst of that light I saw two Personages, and they did in reality speak to me; had seen a vision; I knew it, and I knew that God knew it, and I could not deny it.",
+        "It seems as though the adversary was aware, at a very early period of my life, that I was destined to prove a disturber and an annoyer of his kingdom; else why should the powers of darkness combine against me? Why the opposition and persecution that arose against me, almost in my infancy?"];
+    dataObject34.scripLink = ["1838 Account", "1838 Account"];
+    dataObject34.picture = ["americanProphet.jpg"];
     
-    crossRef1832.push(dataObject); crossRef1832.push(dataObject2); crossRef1832.push(dataObject3); crossRef1832.push(dataObject4);  crossRef1832.push(dataObject5); crossRef1832.push(dataObject4);  crossRef1832.push(dataObject6); crossRef1832.push(dataObject6); crossRef1832.push(dataObject6);
-    crossRef1832.push(dataObject);  crossRef1832.push(dataObject7); crossRef1832.push(dataObject7); crossRef1832.push(dataObject8); crossRef1832.push(dataObject4); crossRef1832.push(dataObject7); crossRef1832.push(dataObject7); crossRef1832.push(dataObject8); crossRef1832.push(dataObject4);
+    crossRef1832.push(dataObject1); crossRef1832.push(dataObject2); crossRef1832.push(dataObject3); crossRef1832.push(dataObject4);  crossRef1832.push(dataObject5); crossRef1832.push(dataObject4);  crossRef1832.push(dataObject6); crossRef1832.push(dataObject6); crossRef1832.push(dataObject6);
+    crossRef1832.push(dataObject1);  crossRef1832.push(dataObject7); crossRef1832.push(dataObject7); crossRef1832.push(dataObject8); crossRef1832.push(dataObject4); crossRef1832.push(dataObject7); crossRef1832.push(dataObject7); crossRef1832.push(dataObject8); crossRef1832.push(dataObject4);
     crossRef1832.push(dataObject9); crossRef1832.push(dataObject10); crossRef1832.push(dataObject11); crossRef1832.push(dataObject12); crossRef1832.push(dataObject13); crossRef1832.push(dataObject14); crossRef1832.push(dataObject14); crossRef1832.push(dataObject14); crossRef1832.push(dataObject14); 
     crossRef1832.push(dataObject15); crossRef1832.push(dataObject16); crossRef1832.push(dataObject17); crossRef1832.push(dataObject18); crossRef1832.push(dataObject19); crossRef1832.push(dataObject20); crossRef1832.push(dataObject9); crossRef1832.push(dataObject17); crossRef1832.push(dataObject21);
-    crossRef1832.push(dataObject22); crossRef1832.push(dataObject23);
+    crossRef1832.push(dataObject22); crossRef1832.push(dataObject23); crossRef1832.push(dataObject24); crossRef1832.push(dataObject1); crossRef1832.push(dataObject25); crossRef1832.push(dataObject26); crossRef1832.push(dataObject27); crossRef1832.push(dataObject28); crossRef1832.push(dataObject29);
+    crossRef1832.push(dataObject7); crossRef1832.push(dataObject7); crossRef1832.push(dataObject7); crossRef1832.push(dataObject7); crossRef1832.push(dataObject30); crossRef1832.push(dataObject30); crossRef1832.push(dataObject31); crossRef1832.push(dataObject32); crossRef1832.push(dataObject33);
+    crossRef1832.push(dataObject33); crossRef1832.push(dataObject33); crossRef1832.push(dataObject34); crossRef1832.push(dataObject17);
     
     $scope.lastSelected = 0;
     
